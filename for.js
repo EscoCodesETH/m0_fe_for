@@ -4,11 +4,35 @@
 // Challenge 1
 // Use a for statement to log to the console all even numbers between 25 and 75.
 
+for (let i = 24; i < 76; i++){
+  if ( i % 2 === 0){
+    console.log(i);
+  }
+}
 
 
 // Challenge 2
 // Use a for statement to log to the console a complete sentence stating the weather using the Array below:
 var weather_options = ["sunny", "snowy", "freezing", "partly cloudy", "drizzly"]
+
+for (let i = 0; i < weather_options.length;i++){
+  if (weather_options[i] === weather_options[0]){
+    console.log ("Its always sunny in Philly")
+  }else if (weather_options[i]=== weather_options[1]){
+    console.log("OMG Its snowing!")
+  }else if (weather_options[i]=== weather_options[2]){
+    console.log ('Its freeeeeeezing!')
+  }else if(weather_options[i]=== weather_options[3]){
+    console.log("theres so much clouds!")
+  }else{
+    console.log("Its raining sideways")
+  }
+}
+
+for (let i = 0; i < weather_options.length;i++){
+  console.log ("Today, the weather is " + weather_options[i] + ".");
+}
+
 
 
 // Challenge 3
@@ -19,4 +43,8 @@ var words = ["car", "bike", "bus", "van", "scooter", "truck", "rv"]
   // The recording doesn't have to be the first time you are solving the problem. 
   // Use technical vocabulary and explain each part to demonstrate your understanding! 
   // Share the link to your video in your small group channel.
-
+for (let i = 0; words.length;i++){
+  if(words[i].length === 3){
+    console.log(words[i]);
+  }
+}
